@@ -1,9 +1,36 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+header {
     background-color: blue;
+    height: 100px;
+}
+
+header h1{
+    text-align: center;
+    color: bisque;
+    line-height: 100px;
+}
+article {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: blueviolet;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    /*flex: calc((100% / 3) - 2rem );*/
+    flex: 1 200px;
+}
+
+/*article:nth-of-type(2){
+    flex: 2;
 }
